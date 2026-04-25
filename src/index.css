@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+}
+
+@layer utilities {
+  .card-hover {
+    @apply transition-all duration-200 cursor-pointer hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  .text-gradient {
+    @apply bg-linear-to-r from-emerald-500 to-blue-500 bg-clip-text text-transparent;
+  }
+}
